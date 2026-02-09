@@ -5,3 +5,6 @@ def home(request):
 
 def contact(request):
     return render(request, 'mainapp/contact.html')
+
+def certificate(request):
+    return render(request, 'mainapp/certficate.html')
