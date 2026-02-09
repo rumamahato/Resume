@@ -1,0 +1,44 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block title %}Services{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h2 class="text-center mb-4 st-font">My Services</h2>
+
+  <div class="row">
+    <div class="col-12">
+      <!-- Hospital Management System Development Service-->
+      <div class="card shadow-lg border-0 rounded-4 mb-4">
+        <div class="card-body">
+          <h4 class="card-title text-primary">Hospital Management System
+            <img src="{% static 'images/hospital.png' %}" class="img-fluid mb-2" width="40" height="20">
+          </h4>
+          <p class="card-text">is a web-based application that helps hospitals manage their daily activities in a simple and digital way. It stores patient information, doctor details, appointments, diagnosis, billing, and medicine records in one secure system. This reduces paperwork, saves time, and improves accuracy in hospital operations. Doctors and staff can easily access patient history, schedule appointments, and manage treatments, while patients receive faster and more organized services. Overall, the system makes hospital work more efficient, secure, and well organized, leading to better patient care.<br><br>Git hub : <a href="https://github.com/rumamahato/hospital-management.git" target="_blank">Hospital Management GitHub</a></p>
+        </div>
+      </div>
+
+      <!-- E-commerce Development Service -->
+      <div class="card shadow-lg border-0 rounded-4 mb-4">
+        <div class="card-body">
+          <h4 class="card-title text-success">E-Commerce
+          <img src="{% static 'images/ecommerce logo.avif' %}" class="img-fluid mb-2" width="40" height="20">
+          </h4>
+          <p class="card-text">Ecommerce is the process of buying and selling products or services online using websites or mobile applications. It allows customers to browse items, place orders, make digital payments, and receive delivery without visiting a physical store. E-commerce makes shopping faster, easier, and more convenient and it helps businesses reach more customers through the internet.<br><br>Git hub : <a href="https://github.com/rumamahato/Ecommerce.git" target="_blank">E-Commerce GitHub</a></p>
+        </div>
+      </div>
+
+      <!-- Restaurant-Application Service -->
+      <div class="card shadow-lg border-0 rounded-4 mb-4">
+        <div class="card-body">
+          <h4 class="card-title text-warning">Restaurant-Application
+            <img src="{% static 'images/MOMO LOGO.webp' %}" class="img-fluid mb-2" width="40" height="20">
+          </h4>
+          <p class="card-text">A popular Nepali fast food made by filling minced meat or vegetables inside small pieces of dough. They are usually steamed, but can also be fried or pan-fried, and are served hot with spicy sauce (achar). MOMOs are loved for their soft outer layer, juicy filling, and delicious taste, making them one of the most favorite snacks in Nepal and nearby regions.<br><br>Git hub : <a href="https://github.com/rumamahato/restaurant-application.git" target="_blank">Restaurant App GitHub</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

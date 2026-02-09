@@ -1,0 +1,31 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="resume">
+
+    <!-- Image center -->
+    <div class="profile-box text-center">
+        <img src="{% static 'images/10000220991.jpg' %}" alt="Profile">
+    </div>
+
+    <!-- Text left side -->
+    <div class="text-content">
+        <h1 class="hello-text st-font">Hello,</h1>
+
+        <p class="intro-text">
+           I am Ruma Mahato, a beginner web developer with a Diploma in Civil Engineering.
+           I have learned Python, Django, HTML, CSS, and basic JavaScript, and I enjoy 
+           building simple web applications. I have completed projects like 
+           Hospital Management System, Restaurant Application, and E-commerce websites as part of my learning. 
+           I am eager to learn new technologies, improve my skills, and gain professional experience in web development.
+        </p>
+    </div>
+</div>
+<div class="text-center">
+    <a href="{% url 'contact' %}"class="btn btn-outline-warning my-3 mr-5">Hire Me</a>
+    <A href="{% url 'contact' %}"class="btn btn-outline-warning my-3 mr-5">contact</a>
+
+</div>
+{% endblock %}

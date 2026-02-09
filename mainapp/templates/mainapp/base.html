@@ -1,0 +1,109 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% block title %}Home{% endblock %}</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static 'css/all.min.css' %}">
+
+  <!-- Google Cursive Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #f8fafc;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background-color: #3d4650;
+      min-height: 100vh;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sidebar h4 {
+      font-family: 'Dancing Script', cursive;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .sidebar a {
+      color: #f7f8fa;
+      text-decoration: none;
+      padding: 12px 0;
+      display: block;
+      width: 100%;
+      text-align: center;
+      border-radius: 8px;
+      transition: 0.3s;
+    }
+
+    /* Yellow hover effect */
+    .sidebar a:hover {
+      color: #fffb07;
+      background-color: rgba(255, 193, 7, 0.1);
+      transform: translateX(4px);
+    }
+
+    .sidebar a.active {
+      color: #fbff07;
+      font-weight: bold;
+      background-color: rgba(255, 193, 7, 0.15);
+    }
+
+    /* Main Content */
+    .main-content {
+      background-color: #343a40;
+      min-height: 100vh;
+      color: white;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    /* Cursive text class */
+    .st-font {
+      font-family: 'Dancing Script', cursive;
+      letter-spacing: 1px;
+    }
+
+    html, body {
+      height: 100%;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container-fluid">
+  <div class="row">
+
+    <!-- Sidebar -->
+    <div class="col-md-2 sidebar">
+      {% include 'mainapp/sidebar.html' %}
+    </div>
+
+    <!-- Main Content -->
+    <div class="col-md-10 main-content">
+      {% block content %}{% endblock %}
+    </div>
+
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

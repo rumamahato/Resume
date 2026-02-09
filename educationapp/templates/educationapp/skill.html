@@ -1,0 +1,60 @@
+{% extends 'mainapp/base.html' %}
+{% load static %}
+
+{% block title %}Skills{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h2 class="text-center mb-4 st-font">My Skills</h2>
+
+  <div class="row">
+
+    <!-- Technical Skills -->
+    <div class="col-md-6 mb-4">
+      <div class="card shadow-lg border-0 rounded-4">
+        <div class="card-body">
+          <h4 class="card-title text-primary">Technical Skills</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Python Programming</li>
+            <li class="list-group-item">Django Web Development</li>
+            <li class="list-group-item">HTML, CSS, Bootstrap</li>
+            <li class="list-group-item">Basic JavaScript</li>
+            <li class="list-group-item">Git & GitHub</li>
+            <li class="list-group-item">Database (SQLite / MySQL)</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Computer Skills -->
+    <div class="col-md-6 mb-4">
+      <div class="card shadow-lg border-0 rounded-4">
+        <div class="card-body">
+          <h4 class="card-title text-success">Computer Skills</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">MS Word, Excel, PowerPoint</li>
+            <li class="list-group-item">Internet & Email Handling</li>
+            <li class="list-group-item">Typing & Documentation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Soft Skills -->
+    <div class="col-md-12">
+      <div class="card shadow-lg border-0 rounded-4">
+        <div class="card-body">
+          <h4 class="card-title text-warning">Soft Skills</h4>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item">Quick Learner</li>
+            <li class="list-group-item">Good Communication</li>
+            <li class="list-group-item">Problem Solving</li>
+            <li class="list-group-item">Teamwork & Time Management</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+{% endblock %}
