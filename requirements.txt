@@ -4,3 +4,5 @@ pillow
 django-ckeditor-5
 django-jazzmin
 django-allauth
+whitenoise
+
