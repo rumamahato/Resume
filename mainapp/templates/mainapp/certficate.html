@@ -4,44 +4,66 @@
 {% block title %}Certificates{% endblock %}
 
 {% block content %}
-<div class="container mt-5">
-    <h1 class="text-center st-font mb-4">My Certificates</h1>
-    <p class="text-center mb-5">Here are some of my learning certificates and achievements.</p>
 
-    <!-- Gallery Grid -->
-    <div class="row g-4">
-        <!-- Certificate 1 -->
-        <div class="col-6 col-md-4 col-lg-3">
-            <div class="gallery-item">
-                <img src="{% static 'images/IMG_20240926_080344.jpg' %}" class="img-fluid rounded-4 shadow" alt="Certificate 1">
-            </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <div class="gallery-item">
-                <img src="{% static 'images/IMG_20240926_080611.jpg' %}" class="img-fluid rounded-4 shadow" alt="Certificate 2">
-            </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <div class="gallery-item">
-                <img src="{% static 'images/IMG_20240926_080630.jpg' %}" class="img-fluid rounded-4 shadow" alt="Certificate 3">
-            </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <div class="gallery-item">
-                <img src="{% static 'images/IMG_20231219_160203.png' %}" class="img-fluid rounded-4 shadow" alt="Certificate 4">
-            </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <div class="gallery-item">
-                <img src="{% static 'images/IMG_20231219_160140.png' %}" class="img-fluid rounded-4 shadow" alt="Certificate 4">
-            </div>
-        </div>
-        <div class="col-6 col-md-4 col-lg-3">
-            <div class="gallery-item">
-                <img src="{% static 'images/WhatsApp.jpeg' %}" class="img-fluid rounded-4 shadow" alt="Certificate 4">
-            </div>
+<div class="container mt-5">
+    
+    <!-- Left Side -->
+    <div>
+        <h3 class="mb-1">Resume</h3>
+        <p class="mb-0">
+            <a href="https://rumamahato.com.np" target="_blank">rumamahato.com.np</a>
+        </p>
+        <p class="mb-0">
+            <a href="https://www.rumamahato.com.np" target="_blank">www.rumamahato.com.np</a>
+        </p>
+    </div>
+</div>
+
+<h1 class="text-center st-font mb-4">My Certificates</h1>
+<p class="text-center mb-5">Here are some of my learning certificates and achievements.</p>
+
+<!-- Gallery Grid -->
+<div class="row g-4">
+
+    <div class="col-6 col-md-4 col-lg-3">
+        <div class="gallery-item">
+            <img src="{% static 'images/IMG_20240926_080344.jpg' %}" class="img-fluid rounded-4 shadow" alt="Certificate 1">
         </div>
     </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+        <div class="gallery-item">
+            <img src="{% static 'images/IMG_20240926_080611.jpg' %}" class="img-fluid rounded-4 shadow" alt="Certificate 2">
+        </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+        <div class="gallery-item">
+            <img src="{% static 'images/IMG_20240926_080630.jpg' %}" class="img-fluid rounded-4 shadow" alt="Certificate 3">
+        </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+        <div class="gallery-item">
+            <img src="{% static 'images/IMG_20231219_160203.png' %}" class="img-fluid rounded-4 shadow" alt="Certificate 4">
+        </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+        <div class="gallery-item">
+            <img src="{% static 'images/IMG_20231219_160140.png' %}" class="img-fluid rounded-4 shadow" alt="Certificate 5">
+        </div>
+    </div>
+
+    <div class="col-6 col-md-4 col-lg-3">
+        <div class="gallery-item">
+            <img src="{% static 'images/WhatsApp.jpeg' %}" class="img-fluid rounded-4 shadow" alt="Certificate 6">
+        </div>
+    </div>
+
+</div>
+```
+
 </div>
 
 <style>
@@ -54,5 +76,16 @@
     transform: scale(1.08);
     box-shadow: 0 12px 30px rgba(0,0,0,0.3);
 }
+
+a {
+    text-decoration: none;
+    color: #0d6efd;
+    font-weight: 500;
+}
+
+a:hover {
+    text-decoration: underline;
+}
 </style>
+
 {% endblock %}
